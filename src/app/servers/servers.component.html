@@ -1,4 +1,10 @@
-<button type="button" class="btn btn-primary" [disabled]="!allowNewSever">Add Server</button>
+<input class="form-control" [(ngModel)]="serverName" >
+<!-- <p>{{serverName}}</p> -->
+<button type="button" class="btn btn-primary" [disabled]="!allowNewSever" (click)="onCreateServer()">Add Server</button>
 <p>{{serverCreationStatus}}</p>
 <app-server></app-server>    
 <app-server></app-server>  
+
+
+<app-databinding></app-databinding>
+<app-databinding></app-databinding>
