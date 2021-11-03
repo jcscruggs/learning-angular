@@ -1,0 +1,6 @@
+<button class="btn btn-success" (click)="passwordFlipper()">Display Details</button>
+
+<p *ngIf="showPassword">Secret Password = Tuna</p>
+
+<hr>
+<p *ngFor="let log of clickLog" [ngStyle]="{backgroundColor: log > 5 ? 'blue' : 'white'}" [ngClass]="{higherThanFive: log > 5}">{{log}}</p>

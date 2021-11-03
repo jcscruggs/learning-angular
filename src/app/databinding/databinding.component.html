@@ -1,4 +1,4 @@
 <input class="form-control" [(ngModel)]="username">
 <p>Hello {{username}}</p>
 
-<button class="btn btn-primary" [disabled]="isEmpty()" (click)="removeName()">RESET USERNAME</button>
+<button class="btn btn-primary" [disabled]=" isEmpty()" (click)="removeName()">RESET USERNAME</button>
